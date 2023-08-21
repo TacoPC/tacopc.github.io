@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Sugary Spire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            background-color: purple; /* Changed color to purple */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px; /* Added margin for spacing */
+            font-size: 14px; /* Font size increased for a more 2010s look */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10em 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <audio id="wahAudio" src="wah.mp3"></audio>
+    <script>
+        function showDownloadPage() {
+            document.getElementById('content').innerHTML = `
+                <h2>download now!</h2>
+                <p>click below to start the download!11!111!11</p>
+                <button class="download-button" onclick="no()">download</button>
+            `;
+        }
+        function no() {
+            document.getElementById('wahAudio').play(); // Play the audio
+            document.getElementById('content').innerHTML = `
+                <h2>nuh uh, no free sugary spire for you<h2>
+                <h2>loser lol<h2>
+            `;
+
+            setTimeout(function() {
+                document.body.innerHTML = `
+                    <h1>Oops!</h1>
+                    <p>Something bad happened..</p>
+                `;
+            }, 10000); // 10000 milliseconds (10 seconds) timeout
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>freesugaryspire.github.io</h1>
+        <p>free sugary builds here!!1111!!1!1</p>
+    </header>
+
+    <div class="container" id="content">
+        <h2>free buildsse:</h2>
+        <button class="download-button" onclick="showDownloadPage()">free sugary</button>
+        <button class="download-button" onclick="showDownloadPage()">free spire</button>
+        <button class="download-button" onclick="showDownloadPage()">free pizzelle</button>
+        <button class="download-button" onclick="showDownloadPage()">free pizzano</button>
+    </div>
+    <footer>
+         <h2>we are raeeasl!</h2>
+         <p>yes we are</p>
+    </footer>
+</body>
+</html>
