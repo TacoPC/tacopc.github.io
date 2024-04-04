@@ -1,2 +1,127 @@
-tacopc.github.io
-i guess
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+	    font-size: 99px;
+            -webkit-text-stroke: 3px black;
+            text-stroke: 3px black;
+	    margin: 5px auto;
+        }
+        h2 {
+            color: #ffffff;
+            text-align: center;
+	    font-size: 77px;
+            -webkit-text-stroke: 3px black;
+            text-stroke: 3px black;
+	    margin: 5px auto;
+        }
+        .container {
+            margin: 5px auto;
+            text-align: center;
+        }
+        .icon {
+            display: inline-block;
+            margin: 60px;
+            width: 175px;
+            height: 175px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 3px solid #000;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        .icon img {
+            width: 115px;
+            height: 115px;
+            margin-top: 30px;
+        }
+        .icon p {
+            color: #ffffff;
+            text-shadow: 
+                3px 3px 0 #000, 
+                -3px -3px 0 #000, 
+                3px -3px 0 #000, 
+                -3px 3px 0 #000, 
+                2px 2px 0 #000, 
+                -2px -2px 0 #000, 
+                2px -2px 0 #000, 
+                -2px 2px 0 #000, 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000,
+                3px 2px 0 #000, 
+                3px 1px 0 #000, 
+                3px 0px 0 #000, 
+                3px -1px 0 #000, 
+                3px -2px 0 #000, 
+                2px 3px 0 #000, 
+                1px 3px 0 #000, 
+                0px 3px 0 #000,
+                -1px 3px 0 #000, 
+                -2px 3px 0 #000;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+<h1>tacopc.github.io</h1>
+<h2>My socials</h2>
+    <div class="container">
+        <div class="icon">
+            <a href="https://www.youtube.com/channel/UCbalHSIqGwuXQEuck72TJrQ" target="_blank" onclick="playRandomSound()">
+                <img src="youtube.png" alt="YouTube">
+            </a>
+            <p>YouTube</p>
+        </div>
+        <div class="icon">
+            <a href="https://gamebanana.com/members/1966072" target="_blank" onclick="playRandomSound()">
+                <img src="gamebanana.png" alt="GameBanana">
+            </a>
+            <p>GameBanana</p>
+        </div>
+        <div class="icon">
+            <a href="https://discord.gg/JBgj7sxx8G" target="_blank" onclick="playRandomSound()">
+                <img src="discord.png" alt="Discord">
+            </a>
+            <p>Discord</p>
+        </div>
+    </div>
+    <audio id="audioPlayer" preload="auto"></audio>
+    <script>
+        const soundList = [
+            'sound1.mp3',
+            'sound2.mp3',
+            'sound3.mp3',
+            'sound4.mp3',
+            'sound5.mp3',
+            'sound6.mp3',
+            'sound7.mp3',
+        ];
+        function playRandomSound() {
+            const randomIndex = Math.floor(Math.random() * soundList.length);
+            const selectedSound = soundList[randomIndex];
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = selectedSound;
+            audioPlayer.play();
+        }
+    </script>
+</body>
+</html>
