@@ -16,26 +16,30 @@
         h1 {
             color: #ffffff;
             text-align: center;
-	    font-size: 99px;
+            font-size: 99px;
             -webkit-text-stroke: 3px black;
             text-stroke: 3px black;
-	    margin: 5px auto;
+            margin: 5px auto;
         }
         h2 {
             color: #ffffff;
             text-align: center;
-	    font-size: 77px;
+            font-size: 77px;
             -webkit-text-stroke: 3px black;
             text-stroke: 3px black;
-	    margin: 5px auto;
+            margin: 5px auto;
         }
         .container {
             margin: 5px auto;
             text-align: center;
         }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
         .icon {
-            display: inline-block;
-            margin: 60px;
+            margin: 0 30px;
             width: 175px;
             height: 175px;
             background-color: #fff;
@@ -43,6 +47,10 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             border: 3px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .icon:hover {
             transform: scale(1.1);
@@ -50,7 +58,6 @@
         .icon img {
             width: 115px;
             height: 115px;
-            margin-top: 30px;
         }
         .icon p {
             color: #ffffff;
@@ -77,14 +84,15 @@
                 0px 3px 0 #000,
                 -1px 3px 0 #000, 
                 -2px 3px 0 #000;
-            margin-top: 25px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 <h1>tacopc.github.io</h1>
 <h2>My socials</h2>
-    <div class="container">
+<div class="container">
+    <div class="row">
         <div class="icon">
             <a href="https://www.youtube.com/channel/UCbalHSIqGwuXQEuck72TJrQ" target="_blank" onclick="playRandomSound()">
                 <img src="youtube.png" alt="YouTube">
@@ -104,24 +112,45 @@
             <p>Discord</p>
         </div>
     </div>
-    <audio id="audioPlayer" preload="auto"></audio>
-    <script>
-        const soundList = [
-            'sound1.mp3',
-            'sound2.mp3',
-            'sound3.mp3',
-            'sound4.mp3',
-            'sound5.mp3',
-            'sound6.mp3',
-            'sound7.mp3',
-        ];
-        function playRandomSound() {
-            const randomIndex = Math.floor(Math.random() * soundList.length);
-            const selectedSound = soundList[randomIndex];
-            const audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.src = selectedSound;
-            audioPlayer.play();
-        }
-    </script>
+    <div class="row">
+        <div class="icon">
+            <a href="felicia">
+                <img src="felicia.png" alt="Felicia">
+            </a>
+            <p>Felicia</p>
+        </div>
+        <div class="icon">
+            <a href="art">
+                <img src="art.png" alt="Art">
+            </a>
+            <p>Art</p>
+        </div>
+        <div class="icon">
+            <a href="blockyhour7">
+                <img src="blockyhour7.png" alt="Blocky Hour 7">
+            </a>
+            <p>Blocky Hour 7</p>
+        </div>
+    </div>
+</div>
+<audio id="audioPlayer" preload="auto"></audio>
+<script>
+    const soundList = [
+        'sound1.mp3',
+        'sound2.mp3',
+        'sound3.mp3',
+        'sound4.mp3',
+        'sound5.mp3',
+        'sound6.mp3',
+        'sound7.mp3',
+    ];
+    function playRandomSound() {
+        const randomIndex = Math.floor(Math.random() * soundList.length);
+        const selectedSound = soundList[randomIndex];
+        const audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = selectedSound;
+        audioPlayer.play();
+    }
+</script>
 </body>
 </html>
