@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Hub</title>
+    <title>tacopc.github.io</title>
     <style>
         body {
             font-family: "Comic Sans MS", cursive, sans-serif;
@@ -36,17 +36,16 @@
         .row {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
         }
         .icon {
-            margin: 0 30px;
+            margin: 0 10px;
             width: 175px;
             height: 175px;
             background-color: #fff;
             border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            border: 3px solid #000;
+            border: 2px solid #000;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -58,33 +57,11 @@
         .icon img {
             width: 115px;
             height: 115px;
+            margin-top: 20px;
         }
         .icon p {
-            color: #ffffff;
-            text-shadow: 
-                3px 3px 0 #000, 
-                -3px -3px 0 #000, 
-                3px -3px 0 #000, 
-                -3px 3px 0 #000, 
-                2px 2px 0 #000, 
-                -2px -2px 0 #000, 
-                2px -2px 0 #000, 
-                -2px 2px 0 #000, 
-                1px 1px 0 #000, 
-                -1px -1px 0 #000, 
-                1px -1px 0 #000, 
-                -1px 1px 0 #000,
-                3px 2px 0 #000, 
-                3px 1px 0 #000, 
-                3px 0px 0 #000, 
-                3px -1px 0 #000, 
-                3px -2px 0 #000, 
-                2px 3px 0 #000, 
-                1px 3px 0 #000, 
-                0px 3px 0 #000,
-                -1px 3px 0 #000, 
-                -2px 3px 0 #000;
-            margin-top: 10px;
+            color: #000000;
+            margin-top: 1px;
         }
     </style>
 </head>
@@ -112,24 +89,32 @@
             <p>Discord</p>
         </div>
     </div>
+</div>
+<h2>Subpages</h2>
+<div class="container">
     <div class="row">
         <div class="icon">
-            <a href="felicia">
-                <img src="felicia.png" alt="Felicia">
-            </a>
-            <p>Felicia</p>
-        </div>
-        <div class="icon">
-            <a href="art">
+            <a href="art/index.html" target="_blank" onclick="playRandomSound()">
                 <img src="art.png" alt="Art">
             </a>
             <p>Art</p>
         </div>
+    </div>
+</div>
+<h2>Games</h2>
+<div class="container">
+    <div class="row">
         <div class="icon">
-            <a href="blockyhour7">
+            <a href="blockyhour7/index.html" target="_blank" onclick="playRandomSound()">
                 <img src="blockyhour7.png" alt="Blocky Hour 7">
             </a>
             <p>Blocky Hour 7</p>
+        </div>
+        <div class="icon">
+            <a href="rubybox/index.html" target="_blank" onclick="playRandomSound()">
+                <img src="rubybox.png" alt="Ruby Box">
+            </a>
+            <p>Ruby Box</p>
         </div>
     </div>
 </div>
